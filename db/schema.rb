@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2021_01_11_215554) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "taks", force: :cascade do |t|
+  create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.string "detail"
     t.datetime "created_at", precision: 6, null: false
