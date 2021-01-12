@@ -1,0 +1,11 @@
+<h1>ユーザー 作成</h1>
+<%= form_with model: @user, local: true do |f| %>
+<div class="form-group">
+    氏名 <input type="text" name="user[name]" id="user_name">
+  </div>
+  <div class="form-group">
+    年齢 <input type="text" name="user[age]" id="user_age">
+  </div>
+  <%= f.submit "送信" %>
+<% end %>
+<%= link_to "一覧画面へ", users_path %>
