@@ -22,6 +22,11 @@ def update
     message = Message.find(params[:id])
     message.update(message_params)
 end
+
+def destroy
+    message = Message.find(params[:id])
+    message.destroy
+end
 private
     def message_params
         params.require(:message).permit(:title,:Contents)
