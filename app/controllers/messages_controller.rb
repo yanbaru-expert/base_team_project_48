@@ -29,7 +29,7 @@ def destroy
 end
 private
     def message_params
-        params.require(:message).permit(:title,:Contents)
+        params.require(:message).permit(:title,:content)
     end
 
 end
